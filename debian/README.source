@@ -1,0 +1,8 @@
+rdfalchemy for Debian
+---------------------
+
+The sources are snapshotted from Graham Higgins' GitHub
+repository. See debian/rules' get-orig-source rule.
+
+ -- Olivier Berger <obergix@debian.org>, Wed, 21 May 2014 18:36:03 +0200
+

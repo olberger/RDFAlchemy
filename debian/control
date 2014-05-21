@@ -1,0 +1,19 @@
+Source: rdfalchemy
+Priority: optional
+Maintainer: Olivier Berger <obergix@debian.org>
+Build-Depends: debhelper (>= 8.0.0), dh-python, python-all (>= 2.6.6-3~), python-setuptools
+Standards-Version: 3.9.5
+X-Python-Version: >= 2.6
+Section: python
+Homepage: https://github.com/gjhiggins/RDFAlchemy
+#Vcs-Git: git://git.debian.org/collab-maint/rdfalchemy.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/rdfalchemy.git;a=summary
+
+Package: python-rdfalchemy
+Architecture: all
+Depends: ${python:Depends}, ${misc:Depends}
+Description: RDFAlchemy is an Object RDF Mapper for Python
+ RDFAlchemy is an abstraction layer, allowing Python developers to use
+ familiar dot notation to access and update an RDF triplestore
+
+
