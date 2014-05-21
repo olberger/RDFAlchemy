@@ -21,6 +21,11 @@ override_dh_python2:
 override_dh_compress:
 	dh_compress -X.py -X.rdf -X.rdfs
 
+override_dh_auto_test:
+	PYBUILD_SYSTEM=custom \
+	PYBUILD_TEST_ARGS="NOSE_IGNORE_FILES=.*joseki.* nosetests -e 'sesame_is_sparql_test' test" \
+	dh_auto_test --buildsystem=pybuild
+
 # Much borrowed from https://wiki.debian.org/onlyjob/get-orig-source :
 
 PKD  = $(abspath $(dir $(MAKEFILE_LIST)))
